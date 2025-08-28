@@ -1,0 +1,29 @@
+
+
+        clone from github
+        ================
+git clone 
+git status 
+git add .
+git commit -m "mes"
+git push -u origin main
+
+
+        up from local to github
+        =================
+git init 
+git remote add origin url
+git remote show origin
+git status 
+git add .
+git commit -m "mes"
+git push -u origin main
+
+
+git log
+git checkout -b (name)
+git branch
+
+pull from new branch
+=======
+git pull origin (new branch)
