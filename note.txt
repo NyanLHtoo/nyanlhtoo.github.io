@@ -21,9 +21,9 @@ git push -u origin main
 
 
 git log
-git checkout -b (name)
+git checkout -b (name) 
 git branch
 
-pull from new branch
-=======
+        pull from new branch
+            ======
 git pull origin (new branch)
