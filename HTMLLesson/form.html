@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>register</h1>
+    <form action="register.php" method="GET">
+        <div>
+            <label for="name">Student Name</label><br>
+            <input type="text" id="name" name="St Name" value="Nyan Linn Htoo" maxlength="20">
+        </div>
+        <br><br>
+        <div>
+            <label for="age">Student Age</label><br>
+            <input type="number" name="St age" id="age" max="30" min="10" step="2">
+        </div>
+        <br><br>
+        <div>
+            <label for="phone">Phone Number</label><br>
+            <input type="number" id="phone" minlength="11" placeholder="09123456789" required>
+        </div>
+        <br><br>
+        <div>
+            <label for="email" >Email</label><br>
+            <input type="email" name="Email" id="email" placeholder="example@gmail.com" >
+        </div><br><br>
+        <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="Password" id="password" placeholder="Enter Password" min="6" max="15" required>
+        </div>
+        <br><br>
+
+
+        <button type="submit">register</button>
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
