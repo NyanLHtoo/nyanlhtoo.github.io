@@ -1,0 +1,33 @@
+h1{
+    color: aqua;
+    text-align: center;
+}
+
+/* id selector */
+#idselector{
+    color: rgb(55, 0, 254);
+    word-spacing: 10px;
+    line-height: 30px;
+    text-transform: lowercase;
+}
+/* class selector */
+.classselector{
+    text-indent: 35px;
+    color: rgb(58, 183, 17);
+
+}
+.class2{
+    color: darkorange;
+    font-size: 25px;
+}
+/* desc selector */
+#desc a{
+    color: aqua;
+    font-size: 30px;
+}
+
+/* child selector */
+#child > a{
+    color: rgb(255, 0, 0);
+    font-size: 25px;
+}

@@ -2,3 +2,22 @@ h1{
     color: #1ba98a;
     text-align: center;
 }
+
+/* universal selector */
+*{
+    letter-spacing: 10px;
+    color: rgb(31, 210, 219);
+}
+
+/* tag / element selector */
+p{
+    font-size: 30px;
+    color: rgb(230, 14, 100);
+}
+/* attribute selector */
+input[type="text"]{
+    color: rgb(123, 255, 0);
+}
+a[title="google"]{
+    color: rgb(16, 67, 235);
+}
