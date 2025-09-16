@@ -31,3 +31,38 @@ h1{
     color: rgb(255, 0, 0);
     font-size: 25px;
 }
+
+/* pseudo selector */
+
+a:link{
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aqua;
+    font-size: 20px;
+}
+
+a:active{
+    color: chartreuse;
+    letter-spacing: 10px;
+}
+
+a:visited{
+    color: black;
+}
+
+/* target */
+
+h5:target{
+    color: blueviolet;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+div:target{
+    color: darkblue;
+    text-transform: capitalize;
+    font-size: 20px;
+}
