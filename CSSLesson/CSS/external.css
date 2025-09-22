@@ -175,3 +175,56 @@ div:target{
     grid-row-end: 4;
     grid-column-start: 3;
 }
+
+/* Position */
+.position_relative_P{
+    border: 1px solid black;
+    width: 1000px;
+    height: 400px;
+
+}
+.position_relative{
+    border: 1px solid red;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    right: -200px;
+}
+
+.position_absolute_P{
+    border: 1px solid black;
+    width: 1000px;
+    height: 400px;
+    position: relative;
+
+}
+.position_absolute{
+    border: 1px solid red;
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 50px;
+    left :100px;
+}
+
+.fixed{
+    position: fixed;
+    top: 200px;
+    right: 200px;
+}
+/* online font */
+.online_font {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* offline font */
+@font-face {
+    font-family: "Asi";
+    src: url(../fonts/Asimovian/Asimovian-Regular.ttf);
+}
+
+.offline_font{
+    font-family: "Asi";
+}
