@@ -2,9 +2,7 @@ h1{
     color: rgb(43, 84, 84);
     text-align: center;
 }
-*{
-    background-color: wheat;
-}
+
 
 /* id selector */
 #idselector{
@@ -227,4 +225,31 @@ div:target{
 
 .offline_font{
     font-family: "Asi";
+}
+/* mobile size */
+@media (max-width:600px){
+    body{
+        background-color: aqua;
+    }
+}
+
+/* tablet size */
+@media (min-width:601px) and (max-width:900px){
+    body{
+        background-color: gray;
+    }
+}
+
+/* laptop size */
+@media (min-width:901px) and (max-width:1200px){
+    body{
+        background-color: goldenrod;
+    }
+}
+
+/* desktop size */
+@media (min-width:1201px){
+    body{
+        background-color: violet;
+    }
 }
