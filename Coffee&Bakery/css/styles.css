@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Lora ;
+    src: url(../fonts/Lora/Lora-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Lora ;
+
+}
+.body{
+    color: #3D1F12;
+    background-color: #F1EADA;
+}
+/* start nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_logo{
+    display: flex;
+    align-items: center;
+
+}
+.nav_logo img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20px ;
+}
+ .nav_title{
+    text-decoration: none;
+ }
+.nav_item{
+    /* float: right; */
+    margin-top: -30px;
+    margin-left: 30px;
+}
+
+.nav_item li{
+    display: inline-block ;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+.nav_item li a{
+    text-decoration: none;
+}
+/* .nav_item li a:hover {
+    text-decoration: underline;
+} */
+.nav_order{
+    margin-right: 40px;
+}
+
+.nav_order i{
+    background: none;
+}
+.order_now{
+    background-color:#3D1F12 ;
+    display: inline-block;
+    color:  #F1EADA !important ;
+    padding: 10px 20px ;
+    border: 1px solid ;
+    border-radius: 50px;
+    text-decoration: none;
+
+}
+
+.order_now:hover{
+    background-color:#F1EADA ;
+    color: #3D1F12 !important;
+    border-radius: 5px solid ;
+}
+/* end nav */
+/* start bunner */
+.bunner{
+    margin-top:20px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.bunner img{
+    width: 100% ;
+
+}
+.bunner_text{
+    /* text-align: center; */
+    margin-top: 250px;
+}
+.bunner_text h1{
+    font-size:60px ;
+}
+
+.bunner_text a{
+    display: inline-block;
+    margin-top: 60px;
+
+}
+
+/* end bunner */
+/* start signature */
+#signature{
+    width: 90%;
+    margin: auto;
+}
+.signature_title h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.signature_title p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.signature_drink{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+.signature_img{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+}
+.signature_box{
+    border: 1px solid #3D1F12;
+    padding: 5px;
+    border-radius: 5px;
+}
+.signature_box p{
+    padding: 10px 20px;
+}
+.signature_box button{
+    float: right ;
+    background-color:#3D1F12 ;
+    color:  #F1EADA !important ;
+    padding: 10px ;
+    border: 1px solid ;
+    border-radius: 50px;
+}
+.signature_box button:hover{
+    background-color:#F1EADA ;
+    color: #3D1F12 !important;
+    border-radius: 5px solid ;
+}
+/* end signature */
+/* start blog */
+#blog{
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+}
+#blog > h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.blog_text h3 , .blog_text pre{
+    margin-bottom: 20px;
+    text-align: start;
+}
+.blog_text button{
+    background-color:#3D1F12 ;
+    color:  #F1EADA !important ;
+    padding: 10px ;
+    border: 1px solid ;
+    border-radius: 50px;
+}
+.blog_text button:hover{
+    background-color:#F1EADA ;
+    color: #3D1F12 !important;
+    border-radius: 5px solid ;
+}
+.blog_img1{
+    width: 350px;
+    height:350px;
+    border-radius: 10px;
+}
+.blog_img2{
+    width: 400px;
+    height:500px;
+    border-radius: 10px;
+}
+
+/* end blog */
+/* start about */
+.about_us{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+.about_us h1{
+    margin-bottom: 15px;
+}
+/* end about */
+/* start footer */
+#footer{
+    background-color: #3D1F12;
+    color: #d7d7d7;
+}
+.footer{
+    width: 90%;
+    margin: auto ;
+    display: grid;
+    grid-template-columns: 500px auto auto ;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.footer-about{
+        margin: 30px;
+}
+.footer-about h3 ,
+.footer-link h3,
+.footer-contact h3
+{
+    margin-bottom: 15px;
+}
+.footer-link {
+    margin: 30px;
+}
+.footer-link a{
+    display: block;
+    text-decoration: none;
+    color: #d7d7d7;
+    margin-bottom: 5px;
+}
+.footer-contact p{
+    margin-bottom: 5px;
+}
+
+.footer-buttom{
+
+    font-size: 10px;
+
+
+}
+
+/* end footer */
