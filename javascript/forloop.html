@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <h1>For Loop Lesson</h1>
+    <script>
+        // for (initialize; condition; Update){
+        //code
+        // }
+
+        for (let i = 0; i < 5; i++) {
+            document.write(`<h3>Hello World</h3>`);
+
+        }
+
+        let laptop = ['Mac', 'Msi', 'Dell', 'Asus', 'Hp'];
+
+        for (let a = 0; a < laptop.length; a++) {
+            document.write(laptop[a] + "<br>");
+        }
+
+        for (let b = 1; b <= 12; b++) {
+            document.write(`<p> 5 x ${b} = ${5 * b} </p>`);
+
+        }
+
+        // *        0
+        // **       01
+        // ***      012
+        // ****     0123
+        // *****    01234
+
+        for (let c = 0; c < 5; c++) {
+
+            for (let d = 0; d <= c; d++) {
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+
+    </script>
+    <hr>
+    <h1>Homework</h1>
+    <script>
+        let number = prompt("Enter A number for Multiply ");
+
+        for (let p = 1; p <= 12; p++) {
+            document.write(`<p> ${number} x ${p} = ${number * p} </p>`);
+
+        }
+
+        // ***** 43210
+        // ****  3210
+        // ***   210
+        // **    10
+        // *     0             
+        for (let x = 4; x >= 0; x--) {
+
+            for (let y = 0; y <= x; y++) {
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+
+</html>
