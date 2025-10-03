@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guss Number</title>
+</head>
+
+<body>
+
+    <script>
+        let number = 4;
+        let guess = prompt("Enter a number Between 0 to 9");
+        let i = 0; //count
+
+        while (guess != number) {
+            if (guess < number) {
+                alert("Your Number is Lower, plesse Try Again!");
+
+            } else {
+                alert("Your Number is greater, plesse Try Again!");
+
+            }
+            i++;
+            guess = prompt("Enter a number Between 0 to 9"); // for after wrong
+
+        }
+
+        i++;
+        document.write(`<h1> Correct! Your Correct is ${i} time. </h1>`);
+
+    </script>
+</body>
+
+</html>

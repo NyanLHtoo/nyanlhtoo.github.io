@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+
+<body>
+    <h1>Function Lesson</h1>
+    <script>
+
+        // naming function
+        function name() {
+            let num = 3;
+            let num3 = 5;
+            total = num + num3;
+            document.write(`Your result ${total}`)
+        }
+        name();
+
+        // parameter function
+
+        function result(no1 = 21, no2 = 9) {
+            let total = no1 + no2;
+            document.write(`<h1>Your total is ${total}.</h1>`);
+        }
+
+        result();
+        result(76, 55);
+
+        //default parameter
+        function multi(no3 = 2, no4 = 8) {
+            let result = no3 * no4;
+            document.write(`<h1>Your total is ${result}.</h1>`);
+
+        }
+        multi(6, 6)
+
+        // return function
+
+        function sub(no9 = 10, no5 = 4) {
+            let tot = no9 - no5;
+            return tot;
+        }
+
+        let Subdata = sub();
+        document.write(`<h1>Your total is ${Subdata}.</h1>`);
+
+    </script>
+</body>
+
+</html>
