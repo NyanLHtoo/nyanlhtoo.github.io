@@ -356,6 +356,55 @@
 }
 /* contact end */
 
+/* start review */
+
+.review{
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.review h2{
+    text-align: center;
+}
+.review > p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.client_review{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+}
+.client_message{
+    margin-bottom: 30px;
+        height: 150px;
+
+}
+.client_review img{
+    width: 30%;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+.client_review div{
+    background-color: #3D1F12;
+    color: #F1EADA;
+    border: 1px solid #3D1F12;
+    padding: 40px;
+    border-radius: 5px 100px;
+}
+.start_rating{
+    color: #ffd500;
+    margin: 5px 0px;
+}
+
+/* end review */
+
 /* start footer */
 #footer{
     background-color: #3D1F12;
