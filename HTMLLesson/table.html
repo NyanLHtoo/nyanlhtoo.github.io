@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Table Lesson</h1>
     <table border="1" cellspacing="1" cellpadding="10">
@@ -51,7 +53,7 @@
                 <td>0912346987</td>
                 <td>male</td>
             </tr>
-<tr>
+            <tr>
                 <td>1</td>
                 <td>nyan</td>
                 <td>monywa</td>
@@ -114,7 +116,7 @@
                 <th>snack</th>
                 <th>5</th>
                 <th>2000</th>
-                <th>10000</th>           
+                <th>10000</th>
             <tr>
                 <th>2</th>
                 <th>juice</th>
@@ -128,5 +130,90 @@
             </tr>
         </tbody>
     </table>
+
+
+    <script>
+        let hasError = false;
+        var studentList = [];
+        function showText() {
+            alert("This work!!!")
+        }
+        function displayData() {
+            hasError = false;
+
+            //get the data of the students first
+            let Name = document.forms["Form"]["studentName"].value.trim();
+            let Age = document.forms["Form"]["studentAge"].value.trim();
+            let Address = document.forms["Form"]["studentAddress"].value.trim();
+
+            console.log(Name);
+            console.log(Age);
+            console.log(Address);
+
+            //create object student
+
+            if (Name === "") {
+                hasError = true;
+                let nameError = document.getElementById("name_error");
+                nameError.innerHTML = 'Name must be required :)';
+            } else {
+                let nameError = document.getElementById("name_error");
+                nameError.innerHTML = '';
+            }
+
+
+            if (Age === "") {
+                hasError = true;
+                let ageError = document.getElementById("age_error");
+                ageError.innerHTML = 'Age must be required';
+            }
+            else if (Age <= 0 || Age >= 150 || isNaN(Age)) {
+                let ageError = document.getElementById("age_error");
+                ageError.innerHTML = 'Age must be greater than 0  or less than 150 :)';
+                hasError = true;
+            }
+            else {
+                let ageError = document.getElementById("age_error");
+                ageError.innerHTML = '';
+            }
+
+
+            if (Address === "") {
+                let addressError = document.getElementById("address_error");
+                addressError.innerHTML = 'Address must be required';
+                hasError = true;
+            } else {
+                let addressError = document.getElementById("address_error");
+                addressError.innerHTML = '';
+            }
+
+            if (hasError) return false;
+            //create the object of each student
+            let student = {
+                student_name: Name,
+                student_age: Age,
+                student_address: Address
+            };
+            studentList.push(student);
+            //show the data of the students
+            let html = '';
+            for (let index = 0; index < studentList.length; index++) {
+                let Student = studentList[index];
+                html +=
+                    `<tr>
+                    <td>${index + 1}</td>
+                    <td>${Student.student_name}</td>
+                    <td>${Student.student_age}</td>
+                    <td>${Student.student_address}</td>
+                </tr>`;
+            };
+            document.getElementById("result").innerHTML = html;
+
+            // Clear form after successful submission
+            document.forms["Form"].reset();
+        }
+
+    </script>
 </body>
+
 </html>
