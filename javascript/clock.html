@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clock {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .time {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock">
+        <span id="hour" class="time"></span> :
+        <span id="minute" class="time"></span> :
+        <span id="idsecond" class="time"></span>
+        <span id="format"> </span><br>
+        <span id="day" class="date"> </span>
+        <span id="month" class="date"> </span>
+        <span id="year" class="date"> </span>
+    </div>
+
+
+    <script>
+
+
+
+        //hour
+        function showTime() {
+            let date = new Date();
+            let getHr = date.getHours();
+            let hr = document.getElementById('hour');
+            let format = document.getElementById('format')
+
+            // time format AM PM
+            if (getHr >= 0 && getHr < 12) {
+                format.innerHTML = `<sup>AM</sup>`;
+
+
+
+
+            } else {
+                format.innerHTML = `<sub>PM</sub>`;
+            }
+
+            // time format 12/24
+            if (getHr > 12) {
+                getHr = getHr - 12;
+            }
+
+
+
+
+            // one digit + 0
+            if (getHr < 10) {
+                getHr = ("0" + getHr);
+            }
+            else {
+            }
+
+            hr.innerHTML = getHr;
+
+            //minute
+
+            let getmin = date.getMinutes();
+            let min = document.getElementById('minute');
+            if (getmin < 10) {
+                getmin = ("0" + getmin);
+            }
+            else {
+
+            }
+            min.innerHTML = getmin;
+
+
+
+            /// second 
+
+            let getsec = date.getSeconds();
+            let sec = document.getElementById('idsecond');
+            if (getsec < 10) {
+                getsec = ("0" + getsec);
+            }
+            else {
+
+            }
+            sec.innerHTML = getsec;
+
+
+            //date
+
+            let getday = date.getDate();
+            let getmonth = date.getMonth();
+            let getyear = date.getFullYear();
+
+            let day = document.getElementById('day')
+            let month = document.getElementById('month')
+            let year = document.getElementById('year')
+
+            let monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+
+            day.innerHTML = getday;
+            month.innerHTML = monthNames[getmonth];
+            year.innerHTML = getyear;
+
+
+        }
+        setInterval(showTime, 1000)
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Student register</h1>
+
+    <form action="" name="myForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="stName"><br><br>
+
+        <label for="age">Age</label><br>
+        <input type="number" id="age" name="stAge"><br><br>
+
+        <label for="address">Address</label><br>
+        <textarea name="stAddress" id="address"></textarea><br><br>
+
+        <button type="button" onclick="showData()">Register</button>
+    </form>
+
+    <h1>Student List</h1>
+    <table border="1" cellpadding="30" cellspacing="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Address</td>
+
+            </tr>
+        </thead>
+        <tbody id="result">
+
+        </tbody>
+    </table>
+
+    <script>
+        function showData() {
+            //get Data
+
+            // let name = document.getElementById('name').value;
+            let name = document.myForm.stName.value;
+            let age = document.myForm.stAge.value;
+            let address = document.myForm.stAddress.value;
+
+            // console.log(name, age, address);
+
+
+            // show data 
+        }
+    </script>
+</body>
+
+</html>
