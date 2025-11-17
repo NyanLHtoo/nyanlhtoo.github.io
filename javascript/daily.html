@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Daily invoice register</h1>
+
+    <form action="" name="myForm">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="Name"><br><br>
+
+        <label for="price">Price</label><br>
+        <input type="number" id="price" name="price"><br><br>
+
+        <label for="qty">Qty</label><br>
+        <input type="number" name="qty" id="qty"><br><br>
+
+
+        <button type="submit" onclick="showData()">Register</button>
+    </form>
+
+    <h1>Daily invoice List</h1>
+    <table border="1" cellpadding="30" cellspacing="1">
+        <thead>
+            <tr>
+                <td>No</td>
+                <td>Name</td>
+                <td>Price</td>
+                <td>Qty</td>
+                <td>Total</td>
+            </tr>
+
+        </thead>
+        <tbody id="result">
+        </tbody>
+        <tfoot id="grand_total">
+
+            <!-- <td align="end" colspan="4">Grand Total :</td> -->
+
+        </tfoot>
+    </table>
+    <script>
+        var invoiceArrayList = [];
+        function showData() {
+            //get Data
+            // let name = document.getElementById('name').value;
+            let name = document.myForm.Name.value;
+            let price = document.myForm.price.value;
+            let qty = document.myForm.qty.value;
+            // console.log(name, age, address);
+
+            // create object
+            let invoice = {
+                // key : value
+                add_name: name,
+                add_price: price,
+                add_qty: qty
+            }
+            // console.log(invoice)
+
+
+            //array push
+            //data prepare
+            invoiceArrayList.push(invoice);
+            // console.log(invoiceArrayList);
+            show()
+        }
+
+
+        // show data 
+        function show() {
+            let html = '';
+
+            for (let i = 0; i < invoiceArrayList.length; i++) {
+                // console.log(invoiceArrayList[i]);
+
+                let invoiceObj = invoiceArrayList[i];
+
+                html += `
+                <tr>
+                    <td>${i + 1}</td>
+                    <td>${invoiceObj.add_name}</td>
+                    <td>${invoiceObj.add_price}</td>
+                    <td>${invoiceObj.add_qty}</td>
+                    <td>${invoiceObj.total}</td>
+                </tr>
+                `;
+
+
+            }
+            document.getElementById("result").innerHTML = html;
+            // console.log(html)
+            // document.myForm.reset();
+        }
+    </script>
+</body>
+
+</html>

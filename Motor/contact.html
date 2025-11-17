@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTOO Motorbikes Shop</title>
+    <link rel="icon" href="images/HTOO.png">
+    <meta name="description"
+        content="Your Town's Premier Motorcycle Shop. We offer new & used bikes, expert service & repairs, and top-brand riding gear. Get your bike ready for the road. Stop by or schedule service today!">
+    <meta name="keywords"
+        content="motorcycle shop, motorcycle repair, motorcycle service, motorcycle dealer, riding gear, motorcycle parts, motorbike service, bike repair, BMW, Dutcati, Yamaha, Honda, Kawasaki, Suzuki, Racing Bikes, Naked Bikes, Adventure">
+    <link rel="stylesheet" href="styles.css">
+    <!-- booststrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="icon/fontawesome/css/all.min.css">
+    <script src="icon/fontawesome/js/all.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-black ">
+        <div class="container">
+            <a class="navbar-brand " href="index.html"><span class="text-red">HTOO</span>MOTORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link  nav_item" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item ms-3 dropdown">
+                        <a class="nav-link dropdown-toggle nav_item" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Motorcycle
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="motor.html">Racing Bike</a></li>
+                            <li><a class="dropdown-item" href="motor.html">Naked</a></li>
+                            <li><a class="dropdown-item" href="motor.html">Adventure</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="motor.html">All</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ms-3 ">
+                        <a class="nav-link active nav_item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-user "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-box me-3">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm" type="search" placeholder="Search Bikes">
+                        <button class="btn btn-sm btn-light btn-outline-sport" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <section class="py-5 mt-4">
+        <div class="container">
+            <h2 class="text-center mb-2"><span class="text-red">Contact</span> HTOO Motorbikes</h2>
+            <div class="title_underline bg-red mx-auto mb-4"></div>
+
+            <p class="text-center mb-5">
+                Reach out for inquiries, test ride appointments, or service bookings. We're here to help!
+            </p>
+
+            <!-- Contact Info Cards -->
+            <div class="row text-center g-4">
+
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 shadow-sm">
+                        <i class="fas fa-phone fa-2x text-red mb-3"></i>
+                        <h5>Phone</h5>
+                        <p>(+959) 789-116-246</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 shadow-sm">
+                        <i class="fas fa-envelope fa-2x text-red mb-3"></i>
+                        <h5>Email</h5>
+                        <p>htoomotor@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="p-4 border rounded h-100 shadow-sm">
+                        <i class="fas fa-map-marker-alt fa-2x text-red mb-3"></i>
+                        <h5>Address</h5>
+                        <p>(80) Street, Monywa, Sagaing</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+
+                    <h4 class="text-center mb-3">Send Us a Message</h4>
+                    <div class="title_underline bg-red mx-auto mb-4"></div>
+
+                    <form class="p-4 border rounded shadow-sm bg-light">
+
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Your First Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your first name">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">Your Last Name</label>
+                                <input type="text" class="form-control" placeholder="Enter your last name">
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" class="form-control" placeholder="Enter your Email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-control" rows="5" placeholder="Write your message here..."></textarea>
+                        </div>
+
+                        <button class="btn bg-red text-white w-100">Send Message</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <h4 class="text-center mb-3">Find Us on the Map</h4>
+                    <div class="title_underline bg-red mx-auto mb-4"></div>
+
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d860.704252283741!2d95.14487792532192!3d22.12547366286212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30ca98ccc226aee5%3A0xcdeadca8eacca35!2sFamily%20Car%20Tyre%20and%20Inflation%20Service!5e0!3m2!1sen!2smm!4v1763356114381!5m2!1sen!2smm"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--start footer -->
+    <footer class="bg-black text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="text-red mb-4">HTOO MOTORS</h4>
+                    <p class="mb-4">Premium sport motorcycles for riders who demand the ultimate performance and style.
+                    </p>
+                    <div class="mb-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="text-red mb-4">Quick Links</h5>
+                    <div class="footer-links d-flex flex-column">
+                        <a href="index.html" class="mb-2">Home</a>
+                        <a href="motor.html" class="mb-2">Motorcycles</a>
+                        <a href="faq.html" class="mb-2">FAQ</a>
+                        <a href="service.html" class="mb-2">Services</a>
+                        <a href="about.html" class="mb-2">About Us</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-red mb-4">Contact Us</h5>
+                    <div class="footer-links">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt text-racing-red me-2"></i> (80)street, Monywa,
+                            Sagaing</p>
+                        <p class="mb-2"><i class="fas fa-phone text-racing-red me-2"></i> (+959) 789-116-246</p>
+                        <p class="mb-2"><i class="fas fa-envelope text-racing-red me-2"></i> htoomotor@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-red mb-4">Business Hours</h5>
+                    <div class="footer-links">
+                        <p class="mb-2">Monday - Friday: 9am - 7pm</p>
+                        <p class="mb-2">Saturday: 10am - 6pm</p>
+                        <p class="mb-2">Sunday: 11am - 5pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-gray">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2022 HTOO Motors. All rights reserved. | Designed for Speed & Performance. |
+                    Created By Nyan Linn Htoo </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTOO Motorbikes Shop</title>
+    <link rel="icon" href="images/HTOO.png">
+    <meta name="description"
+        content="Your Town's Premier Motorcycle Shop. We offer new & used bikes, expert service & repairs, and top-brand riding gear. Get your bike ready for the road. Stop by or schedule service today!">
+    <meta name="keywords"
+        content="motorcycle shop, motorcycle repair, motorcycle service, motorcycle dealer, riding gear, motorcycle parts, motorbike service, bike repair, BMW, Dutcati, Yamaha, Honda, Kawasaki, Suzuki, Racing Bikes, Naked Bikes, Adventure">
+    <link rel="stylesheet" href="styles.css">
+    <!-- booststrap -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="icon/fontawesome/css/all.min.css">
+    <script src="icon/fontawesome/js/all.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-black ">
+        <div class="container">
+            <a class="navbar-brand " href="index.html"><span class="text-red">HTOO</span>MOTORS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link  nav_item" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item ms-3 dropdown ">
+                        <a class="nav-link active dropdown-toggle nav_item" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Motorcycle
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="motor.html">Racing Bike</a></li>
+                            <li><a class="dropdown-item" href="motor.html">Naked</a></li>
+                            <li><a class="dropdown-item" href="motor.html">Adventure</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="motor.html">All</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link nav_item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-user "></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex search-box me-3">
+                    <div class="input-group">
+                        <input class="form-control form-control-sm" type="search" placeholder="Search Bikes">
+                        <button class="btn btn-sm btn-light btn-outline-sport" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- end nav -->
+
+    <!-- start Feature bike -->
+    <section class="my-5 pt-md-5">
+        <div class="container">
+            <h2 class="position-relative mb-2"> <span class="text-red"> Featured </span> Sport Bikes</h2>
+            <div class="title_underline bg-red mb-1"></div>
+            <p class=" mb-3">Discover thrilling sport bikes built for pure adrenaline.</p>
+            <div class="bg-light p-4 mb-5 rounded shadow-sm">
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-2">
+                        <select class="form-select border-0 shadow-sm">
+                            <option selected value="0">All</option>
+                            <option value="1">Racing</option>
+                            <option value="2">Naked</option>
+                            <option value="3">Adventure</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2">
+                        <select class="form-select border-0 shadow-sm">
+                            <option selected value="0">All Model</option>
+                            <option value="1">2000-2010</option>
+                            <option value="2">2011-2020</option>
+                            <option value="3">2021-2025</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2">
+                        <select class="form-select border-0 shadow-sm">
+                            <option selected value="0">All Brand</option>
+                            <option value="1">BMW</option>
+                            <option value="2">Ducati</option>
+                            <option value="3">Yamaha</option>
+                            <option value="4">Suzuki</option>
+                            <option value="5">Honda</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-3 mb-2">
+                        <button class="btn bg-red text-white px-4">
+                            <i class="fa-solid fa-filter me-2"></i>Apply
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">NEW</span>
+                        <img src="images/v4s.jpg" class="card-img-top" alt="Ducati Panigale V4s">
+                        <div class="card-body">
+                            <h5 class="card-title">Ducati Panigale V4s</h5>
+                            <div class=" btn btn-sm rounded-pill text-white bg-red px-2 m-2">$24,995</div>
+                            <p class="card-text">Italian superbike combining extreme power, advanced electronics, and
+                                stunning race-focused performance.
+                            </p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 205 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 214 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 390 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100"> <i
+                                    class="fa-solid fa-circle-info me-2"></i>View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">BEST SELLER</span>
+                        <img src="images/5f11e4732c1783dd5c06f0f1b786780a.jpg" class="card-img-top" alt="BMW S 1000 RR">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW S 1000 RR</h5>
+                            <div class=" btn btn-sm rounded-pill text-white bg-red px-2 m-2">$16,995</div>
+                            <p class="card-text">A precision superbike delivering explosive power, sharp handling, and
+                                everyday practicality.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt" class="specs-icon"></i> Top Speed: 186 mph
+                                </li>
+                                <li><i class="fa-solid fa-horse-head" class="specs-icon"></i> Power: 205 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging" class="specs-icon"></i> Weight: 430 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100"> <i
+                                    class="fa-solid fa-circle-info me-2"></i>View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">LIMITED</span>
+                        <img src="images/ducati x lambo.jpg" class="card-img-top" alt="Ducati Diavel 1260 Lamborghini">
+                        <div class="card-body">
+                            <h5 class="card-title">Ducati × Lamborghini</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$31,995</div>
+                            <p class="card-text">A stunning power cruiser merging Italian luxury, aggressive
+                                performance, and exclusive styling.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 169 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 162 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 485 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kawasaki Ninja H2 -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">BEST SELLER</span>
+                        <img src="images/h2.jpg" class="card-img-top" alt="Kawasaki Ninja H2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kawasaki Ninja H2</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$29,500</div>
+                            <p class="card-text">A supercharged hypersport machine engineered for unmatched power and
+                                breathtaking speed.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 209 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 228 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 525 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/r1 bl.jpg" class="card-img-top" alt="Yamaha YZF-R1">
+                        <div class="card-body">
+                            <h5 class="card-title">Yamaha YZF-R1</h5>
+                            <div class=" btn btn-sm rounded-pill text-white bg-red px-2 m-2">$17,399</div>
+                            <p class="card-text">MotoGP-inspired machine offering exceptional control, advanced
+                                electronics, and thrilling speed.
+                            </p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 186 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 197 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 448 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100"> <i
+                                    class="fa-solid fa-circle-info me-2"></i>View
+                                Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honda CBR1000RR -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">NEW</span>
+                        <img src="images/cbr1000rr.jpg" class="card-img-top" alt="Honda CBR1000RR">
+                        <div class="card-body">
+                            <h5 class="card-title">Honda CBR1000RR</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$16,499</div>
+                            <p class="card-text">A finely balanced superbike delivering precision control and thrilling
+                                race performance.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 186 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 189 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 432 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Suzuki GSX-R1000 -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/gsx1000 gray.jpg" class="card-img-top" alt="Suzuki GSX-R1000">
+                        <div class="card-body">
+                            <h5 class="card-title">Suzuki GSX-R1000</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$15,999</div>
+                            <p class="card-text">A razor-sharp literbike crafted for pure agility, precision, and race
+                                dominance.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 186 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 199 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 445 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Suzuki Hayabusa -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/hayabusa.jpg" class="card-img-top" alt="Suzuki Hayabusa">
+                        <div class="card-body">
+                            <h5 class="card-title">Suzuki Hayabusa</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$18,799</div>
+                            <p class="card-text">A legendary hypersport icon delivering effortless acceleration and
+                                world-famous stability.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 186 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 187 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 582 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kawasaki Z1000 -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/z1000 bl.jpg" class="card-img-top" alt="Kawasaki Z1000">
+                        <div class="card-body">
+                            <h5 class="card-title">Kawasaki Z1000</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$12,999</div>
+                            <p class="card-text">A muscular naked bike delivering raw street performance with aggressive
+                                styling.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 152 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 140 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 487 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yamaha MT-09 -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <span class="badge position-absolute top-0 end-0 m-3 py-2 bg-red">HOT</span>
+                        <img src="images/mt09.jpg" class="card-img-top" alt="Yamaha MT-09">
+                        <div class="card-body">
+                            <h5 class="card-title">Yamaha MT-09</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$9,799</div>
+                            <p class="card-text">A punchy hyper-naked delivering agile handling, strong torque, and
+                                thrilling street performance.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 140 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 119 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 417 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- BMW R 1250 GS -->
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/gs1250 white.jpg" class="card-img-top" alt="BMW R 1250 GS">
+                        <div class="card-body">
+                            <h5 class="card-title">BMW R 1250 GS</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$20,345</div>
+                            <p class="card-text">A true adventure tourer built for long-distance comfort and unmatched
+                                versatility.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 124 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 136 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 549 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card bike-card h-100 position-relative">
+                        <img src="images/cb1000r.jpg" class="card-img-top" alt="Honda CB1000RR">
+                        <div class="card-body">
+                            <h5 class="card-title">Honda CB1000RR</h5>
+                            <div class="btn btn-sm rounded-pill text-white bg-red px-2 m-2">$15,499</div>
+                            <p class="card-text">A refined liter-class streetfighter delivering smooth power and agile
+                                handling.</p>
+                            <ul class="specs">
+                                <li><i class="fa-solid fa-tachometer-alt"></i> Top Speed: 155 mph</li>
+                                <li><i class="fa-solid fa-horse-head"></i> Power: 143 HP</li>
+                                <li><i class="fa-solid fa-weight-hanging"></i> Weight: 489 lbs</li>
+                            </ul>
+                            <a href="product_detail.html" class="btn btn-danger w-100">
+                                <i class="fa-solid fa-circle-info me-2"></i>View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="d-flex justify-content-end ">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- end Feature bike -->
+
+    <!--start footer -->
+    <footer class="bg-black text-light py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h4 class="text-red mb-4">HTOO MOTORS</h4>
+                    <p class="mb-4">Premium sport motorcycles for riders who demand the ultimate performance and style.
+                    </p>
+                    <div class="mb-4">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-2">
+                    <h5 class="text-red mb-4">Quick Links</h5>
+                    <div class="footer-links d-flex flex-column">
+                        <a href="index.html" class="mb-2">Home</a>
+                        <a href="motor.html" class="mb-2">Motorcycles</a>
+                        <a href="faq.html" class="mb-2">FAQ</a>
+                        <a href="service.html" class="mb-2">Services</a>
+                        <a href="about.html" class="mb-2">About Us</a>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <h5 class="text-red mb-4">Contact Us</h5>
+                    <div class="footer-links">
+                        <p class="mb-2"><i class="fas fa-map-marker-alt text-racing-red me-2"></i> (80)street, Monywa,
+                            Sagaing</p>
+                        <p class="mb-2"><i class="fas fa-phone text-racing-red me-2"></i> (+959) 789-116-246</p>
+                        <p class="mb-2"><i class="fas fa-envelope text-racing-red me-2"></i> htoomotor@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <h5 class="text-red mb-4">Business Hours</h5>
+                    <div class="footer-links">
+                        <p class="mb-2">Monday - Friday: 9am - 7pm</p>
+                        <p class="mb-2">Saturday: 10am - 6pm</p>
+                        <p class="mb-2">Sunday: 11am - 5pm</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-gray">
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2022 HTOO Motors. All rights reserved. | Designed for Speed & Performance. |
+                    Created By Nyan Linn Htoo </p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>

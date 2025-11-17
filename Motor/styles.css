@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "roboto";
+    src: url(fonts/roboto/static/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "oswald";
+    src: url(fonts/Oswald/static/Oswald-Bold.ttf);
+}
+*{
+    font-family: "roboto";
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "oswald" !important;
+
+}
+
+.bg-black {
+    background-color: #1a1a1a !important;
+}
+
+.bg-red {
+    background-color: #dc0a2d !important;
+}
+
+.text-red {
+    color: #dc0a2d !important;
+}
+
+.text-yellow {
+    color: #ffde00 !important;
+}
+
+.bg-gray {
+    background-color: #666666 !important;
+}
+/* nav start */
+.navbar{
+    min-height: 70px;
+}
+.nav_item:hover{
+    color: #dc0a2d !important;
+}
+.active{
+    color: #dc0a2d !important;
+
+}
+.search-box {
+    max-width: 250px;
+}
+/* nav end */
+/* start bunner */
+.carousel_img{
+    height:70vh ;
+    object-fit: cover;
+    background-attachment: fixed;
+    filter: brightness(80%);
+    display: flex;
+}
+.carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* end bunner */
+/* start feature */
+
+.title_underline{
+    width: 100px;
+    height: 5px;
+}
+
+.bike-card {
+    height:30vh ;
+    object-fit: cover;
+    background-attachment: fixed;
+    display: flex;
+    overflow: hidden;
+}
+
+.bike-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(220, 10, 45, 0.2);
+    transition: transform 0.5s ease;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.specs li {
+    padding: 5px 0;
+    border-bottom: 1px solid #666666;
+}
+
+
+/* enf feature */
+/* start service */
+.service-icon{
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #dc0a2d !important;
+}
+.service-card {
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(220, 10, 45, 0.15);
+}
+/* end service */
+
+.status-section {
+    background: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9));
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.status-number {
+    font-size: 40px;
+    font-weight: 700;
+    color: #dc0a2d;
+    margin-bottom: 0.5rem;
+}
+
+.status-label {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* start testimodial */
+.testimonial-card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-left: 4px solid #dc0a2d;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.client-name {
+    font-weight: 700;
+    color: #dc0a2d;
+    margin-bottom: 5px;
+}
+
+.client-bike {
+    color: #666666;
+    font-size: 15px;
+}
+/* end testimodial */
+
+
+/* start footer */
+.footer-links a {
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #dc0a2d;
+}
+
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #666666;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #dc0a2d;
+    transform: translateY(-3px);
+}
+/* end footer */
+/* detail */
+.side_img{
+    width: 100px;
+    height: 100px;
+}
+.color_btn{
+    width: 40px;
+    height: 40px;
+}
